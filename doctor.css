@@ -55,3 +55,41 @@ body{
 
 /* Navigation Bar end */
 
+/* Banner Section Start */
+.doctor_banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #18ACD5;
+    height: 450px;
+    color: white;
+}
+.doctor_banner h1{
+    padding: 1rem;
+}
+.search_bar{
+    border: 5px solid rgb(179, 245, 245);
+    border-radius: 8px;
+    padding: 1.5px;
+}
+.search_bar input{
+    width: 800px;
+    height: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.search_bar button{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    float: right;
+    border: 1px solid #4796DF;
+    cursor: pointer;
+    background-color: #4796DF;
+}
+.search_bar button:hover{
+    background-color: white;
+    color: #4796DF;
+}
+

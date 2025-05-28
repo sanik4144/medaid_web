@@ -1,0 +1,2 @@
+Navbar/Border: #4796DF
+Doctor Banner: #18ACD5
