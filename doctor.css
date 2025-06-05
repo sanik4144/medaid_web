@@ -1,135 +1,269 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: none;
   list-style: none;
   text-decoration: none;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-body{
-    max-width: 100%;
-    margin: auto;
+body {
+  max-width: 100%;
+  margin: auto;
 }
 
 /* Navigation Bar Styles */
 #header {
-    background: #4796DF;
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    
+  background: #4796df;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo img {
-    height: 60px;
-    margin-left:40px;
-    display: flex;
-    justify-content:left;
+  height: 60px;
+  margin-left: 40px;
+  display: flex;
+  justify-content: left;
 }
 #nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
 }
 #nav ul li {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 #nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 5px 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px 10px;
 }
 #nav ul li a:hover {
-    background: #fff;
-    color:#4796DF;
-    border-radius: 5px;
+  background: #fff;
+  color: #4796df;
+  border-radius: 5px;
 }
 
 /* Navigation Bar end */
 
 /* Search Section Start */
-.doctor_banner{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #18ACD5;
-    height: 450px;
-    color: white;
+.doctor_banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #18acd5;
+  height: 450px;
+  color: white;
 }
-.doctor_banner h1{
-    padding: 1rem;
-    font-size: 3rem;
+.doctor_banner h1 {
+  padding: 1rem;
+  font-size: 3rem;
 }
-.doctor_banner h3{
-    font-size: 1.5rem;
+.doctor_banner h3 {
+  font-size: 1.5rem;
 }
-.search_bar{
-    border: 5px solid rgb(179, 245, 245);
-    border-radius: 8px;
-    padding: 1.5px;
+.search_bar {
+  border: 5px solid rgb(179, 245, 245);
+  border-radius: 8px;
+  padding: 1.5px;
 }
-.search_bar input{
-    width: 800px;
-    height: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.search_bar input {
+  width: 800px;
+  height: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.search_bar button{
-    width: 100px;
-    height: 50px;
-    font-size: 20px;
-    color: white;
-    float: right;
-    border: 1px solid #4796DF;
-    cursor: pointer;
-    background-color: #4796DF;
+.search_bar button {
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  color: white;
+  float: right;
+  border: 1px solid #4796df;
+  cursor: pointer;
+  background-color: #4796df;
 }
-.search_bar button:hover{
-    background-color: white;
-    color: #4796DF;
+.search_bar button:hover {
+  background-color: white;
+  color: #4796df;
 }
 
 /* Search Section End */
 
 /* Doctor Banner Section Start */
 .doctor_banner_section {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    justify-content: space-around;
-    align-items: center;
-    height: 35rem;
-    background-color: #D7FAF4;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: space-around;
+  align-items: center;
+  height: 35rem;
+  background-color: #d7faf4;
 }
 .left_banner {
-    justify-content: center;
-    padding: 20px;
+  justify-content: center;
+  padding: 20px;
 }
-.left_banner h1{
-    font-size: 4rem;
-    color: #4796DF;
-    margin-bottom: 2rem;
+.left_banner h1 {
+  font-size: 4rem;
+  color: #4796df;
+  margin-bottom: 2rem;
 }
-.left_banner ul li{
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    margin-left: 2rem;
-    color: black;
-    list-style-type: '➡️';
-    padding-inline-start: 1ch;
+.left_banner ul li {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  color: black;
+  list-style-type: "➡️";
+  padding-inline-start: 1ch;
 }
-.right_banner img{
-    width: 30rem;
-    height: 30rem;
-    border-radius: 10px;
+.right_banner img {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 10px;
 }
 
+/* Filtered Doctor Search Start */
+
+.filtered_doctor_search {
+  max-width: 50rem;
+  margin: auto;
+  margin-top: 1.6rem;
+  background: #fff;
+  padding: 4rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+select,
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#searchBtn {
+  align-self: center;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 6rem;
+  height: 3rem;
+  font-size: 1rem;
+  color: white;
+  border: 2px solid #4796df;
+  background-color: #4796df;
+}
+
+#searchBtn:hover {
+  background-color: white;
+  color: #4796df;
+}
+
+.doctor-list {
+  margin-top: 20px;
+}
+
+.doctor-card {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.doctor-card img {
+  width: 140px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.doctor-details {
+  flex: 1;
+}
+
+.doctor-name {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #4796df;
+  margin-bottom: 8px;
+}
+
+.doctor-specialty,
+.doctor-degree {
+  margin-bottom: 4px;
+  font-size: .95rem;
+  color: #444;
+}
+
+.doctor-specialty span,
+.doctor-degree span {
+  font-weight: bold;
+  color: #222;
+}
+
+.doctor-buttons {
+  margin-top: 12px;
+}
+
+.doctor-buttons button {
+  align-self: center;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 8rem;
+  height: 2rem;
+  font-size: .9rem;
+  color: white;
+  border: 2px solid #4796df;
+  background-color: #4796df;
+}
+
+.doctor-buttons button:hover {
+  background-color: white;
+  color: #4796df;
+}
+
+#showMoreBtn{
+  border: none;
+  cursor: pointer;
+  width: 8rem;
+  height: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4796df;
+  background-color: white;
+}
+
+#showMoreBtn:hover {
+  color: #69a4dc;
+  text-underline-offset: 2px;
+  text-decoration: underline;
+}
+
+/* Filtered Doctor Search Start */

@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Dr. Istaque Ahmed Milton",
+    "department": "Anesthesiology",
+    "speciality": "Consultant, Anesthesiology and Pain Medicine",
+    "degree": "MBBS, DA, FCPS"
+  },
+  {
+    "name": "Prof. Wahiuddin Mahmood",
+    "department": "Anesthesiology",
+    "speciality": "Senior Consultant, Anesthesiology",
+    "degree": "MBBS, DA, FCPS"
+  },
+  {
+    "name": "Dr. Clara Singh",
+    "department": "Neurology",
+    "speciality": "Neurologist",
+    "degree": "MBBS, MD"
+  },
+  {
+    "name": "Dr. Henry Kim",
+    "department": "Neurology",
+    "speciality": "Neurophysician",
+    "degree": "MBBS, DM"
+  },
+  {
+    "name": "Dr. Grace Lin",
+    "department": "Anesthesiology",
+    "speciality": "Consultant",
+    "degree": "MBBS, FCPS"
+  },
+  {
+    "name": "Dr. Eva Thompson",
+    "department": "Orthopedics",
+    "speciality": "Orthopedic Surgeon",
+    "degree": "MBBS, MS"
+  },
+  {
+    "name": "Dr. Brian Lee",
+    "department": "Cardiology",
+    "speciality": "Cardiologist",
+    "degree": "MBBS, MD, DM"
+  },
+  {
+    "name": "Dr. Irene Park",
+    "department": "Dermatology",
+    "speciality": "Skin Specialist",
+    "degree": "MBBS, DDVL"
+  },
+  {
+    "name": "Dr. Jack Wilson",
+    "department": "Cardiology",
+    "speciality": "Senior Cardiologist",
+    "degree": "MBBS, MD"
+  },
+  {
+    "name": "Dr. Sara Patel",
+    "department": "Pediatrics",
+    "speciality": "Child Specialist",
+    "degree": "MBBS, DCH"
+  },
+  {
+    "name": "Dr. Alex Chowdhury",
+    "department": "Radiology",
+    "speciality": "Radiologist",
+    "degree": "MBBS, MD"
+  },
+  {
+    "name": "Dr. Fatima Nasreen",
+    "department": "Gynecology",
+    "speciality": "Obstetrician & Gynecologist",
+    "degree": "MBBS, DGO"
+  },
+  {
+    "name": "Dr. Thomas Bale",
+    "department": "ENT",
+    "speciality": "ENT Surgeon",
+    "degree": "MBBS, MS"
+  },
+  {
+    "name": "Dr. Rina Das",
+    "department": "Endocrinology",
+    "speciality": "Diabetes & Hormone Specialist",
+    "degree": "MBBS, MD, DM"
+  },
+  {
+    "name": "Dr. Omar Faruq",
+    "department": "Urology",
+    "speciality": "Consultant Urologist",
+    "degree": "MBBS, MS"
+  }
+]
