@@ -5,6 +5,7 @@
   outline: none;
   list-style: none;
   text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body{
@@ -55,7 +56,7 @@ body{
 
 /* Navigation Bar end */
 
-/* Banner Section Start */
+/* Search Section Start */
 .doctor_banner{
     display: flex;
     flex-direction: column;
@@ -67,6 +68,10 @@ body{
 }
 .doctor_banner h1{
     padding: 1rem;
+    font-size: 3rem;
+}
+.doctor_banner h3{
+    font-size: 1.5rem;
 }
 .search_bar{
     border: 5px solid rgb(179, 245, 245);
@@ -91,5 +96,40 @@ body{
 .search_bar button:hover{
     background-color: white;
     color: #4796DF;
+}
+
+/* Search Section End */
+
+/* Doctor Banner Section Start */
+.doctor_banner_section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    height: 35rem;
+    background-color: #D7FAF4;
+}
+.left_banner {
+    justify-content: center;
+    padding: 20px;
+}
+.left_banner h1{
+    font-size: 4rem;
+    color: #4796DF;
+    margin-bottom: 2rem;
+}
+.left_banner ul li{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    color: black;
+    list-style-type: '➡️';
+    padding-inline-start: 1ch;
+}
+.right_banner img{
+    width: 30rem;
+    height: 30rem;
+    border-radius: 10px;
 }
 

@@ -1,2 +1,3 @@
 Navbar/Border: #4796DF
-Doctor Banner: #18ACD5
+Doctor Search: #18ACD5
+Doctor Banner: #D7FAF4
