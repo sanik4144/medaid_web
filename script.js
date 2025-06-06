@@ -2,7 +2,7 @@ function gotopage(page) {
   window.location.href = page;
 }
 
-/* medicine section scripts */
+/* medicine section scripts start */
 const medicines = [
   {
     id: 1,
@@ -109,3 +109,35 @@ medicines.forEach((medicine) => {
       `;
   medicineList.innerHTML += medicineCard;
 });
+
+/* medicine section scripts end */
+
+/*calculator section scripts start */
+function calculateBMI() {
+  const weight = parseFloat(document.getElementById("weight").value);
+  const height = parseFloat(document.getElementById("height").value); // Convert cm to m
+  const result = document.getElementById("result");
+
+  if (isNaN(weight) || isNaN(height) || height <= 0) {
+    result.textContent = "Please enter valid height and weight.";
+    return;
+  }
+
+  const heightInMeters = height / 100;
+  const bmi = (weight / (heightInMeters * heightInMeters)).toFixed(2);
+
+  let category = "";
+  if (bmi < 18.5) {
+    category = "Underweight";
+  } else if (bmi < 24.9) {
+    category = "Normal weight";
+  } else if (bmi < 29.9) {
+    category = "Overweight";
+  } else {
+    category = "Obese";
+  }
+
+  result.innerHTML = `Your BMI is <strong>${bmi}</strong> (${category})`;
+}
+
+/*calculator section scripts end */
