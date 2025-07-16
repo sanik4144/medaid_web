@@ -1,13 +1,28 @@
 let doctorsData = [];
-let visibleCount = 6;
 
 window.onload = function () {
   fetch('doctors.json')
     .then(res => res.json())
     .then(data => {
       doctorsData = data;
-      renderDoctors(data.slice(0, visibleCount));
+      renderDoctors(data); // Render all doctors initially
     });
+
+  document.getElementById('department').addEventListener('input', () => {
+    const department = document.getElementById('department').value.toLowerCase();
+    let filtered = doctorsData.filter(doc =>
+      department === "" || doc.department.toLowerCase() === department
+    );
+    renderDoctors(filtered);
+  });
+
+  document.getElementById('doctorName').addEventListener('input', () => {
+    const name = document.getElementById('doctorName').value.toLowerCase();
+    let filtered = doctorsData.filter(doc =>
+      (name === "" || doc.name.toLowerCase().includes(name))
+    );
+    renderDoctors(filtered);  // Render filtered doctors
+  });
 
   document.getElementById('searchBtn').addEventListener('click', () => {
     const department = document.getElementById('department').value.toLowerCase();
@@ -16,24 +31,11 @@ window.onload = function () {
       (department === "" || doc.department.toLowerCase() === department) &&
       (name === "" || doc.name.toLowerCase().includes(name))
     );
-    visibleCount = 6;
-    renderDoctors(filtered.slice(0, visibleCount), filtered);
-  });
-
-  document.getElementById('showMoreBtn').addEventListener('click', () => {
-    const department = document.getElementById('department').value.toLowerCase();
-    const name = document.getElementById('doctorName').value.toLowerCase();
-    let filtered = doctorsData.filter(doc =>
-      (department === "" || doc.department.toLowerCase() === department) &&
-      (name === "" || doc.name.toLowerCase().includes(name))
-    );
-
-    visibleCount += 3;
-    renderDoctors(filtered.slice(0, visibleCount), filtered);
+    renderDoctors(filtered);  // Render filtered doctors
   });
 };
 
-function renderDoctors(list, fullList = doctorsData) {
+function renderDoctors(list) {
   const container = document.querySelector('.doctor-list');
   container.innerHTML = '';
   if (list.length === 0) {
@@ -59,8 +61,4 @@ function renderDoctors(list, fullList = doctorsData) {
     `;
     container.appendChild(div);
   });
-
-  const showMoreBtn = document.getElementById('showMoreBtn');
-  showMoreBtn.style.display = list.length >= fullList.length ? 'none' : 'block';
 }
-
