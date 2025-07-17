@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="signupform.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <form class="signup-form" onsubmit="return validateForm()">
+            <h2>Create Account</h2>
+
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name" />
+                <span id="nameError" class="error"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="example@gmail.com"  />
+                <span id="emailError" class="error"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="password"  />
+                <ul id="password-requirements">
+                    <li id="length" class="invalid">❌ At least 6 characters</li>
+                    <li id="uppercase" class="invalid">❌ At least one uppercase letter</li>
+                    <li id="lowercase" class="invalid">❌ At least one lowercase letter</li>
+                    <li id="digit" class="invalid">❌ At least one digit</li>
+                </ul>
+                <span id="passwordError" class="error"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="confirm">Confirm Password</label>
+                <input type="password" id="confirmPassword" placeholder="password"  />
+                <span id="confirmPasswordError" class="error"></span>
+            </div>
+
+            <button type="submit">Sign Up</button>
+            <p class="login-link">Already have an account? <a href="#">Login</a></p>
+        </form>
+    </div>
+
+    <script src="signupform.js"></script>
+</body>
+
+</html>
