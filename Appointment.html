@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Appointment</title>
+  <link rel="stylesheet" href="Appointment.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="logo">
+            <img src="/image/logo.png" alt="MedAID Logo" />
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="doctor.html">Doctor</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Header Section End -->
+  <div class="page-wrapper">
+    <div class="form-container">
+      <h2>Book Appointment</h2>
+      <form id="appointmentForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Patient Name <span>*</span></label>
+            <input type="text" id= "patientName" placeholder="Enter Patient Name">
+             <span class="error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label>Date of Birth</label>
+            <input type="date" id="dob" placeholder="Select Date of Birth">
+            <span class="error" id="dobError"></span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Gender <span>*</span></label>
+            <select id="gender">
+              <option >Select Gender</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+            </select>
+            <span class="error" id="genderError"></span>
+          </div>
+          <div class="form-group">
+            <label>Contact Number <span>*</span></label>
+            <input type="tel" id="contact" placeholder="Enter Contact Number">
+            <span class="error" id="contactError"></span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email <span>*</span></label>
+            <input type="email" id="email" placeholder="Enter email address">
+            <span class="error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label>Request For <span>*</span></label>
+            <select id="requestFor">
+              <option selected disabled>Outpatient Consultation</option>
+              <option>Investigation</option>
+              <option>Health Check Package</option>
+              <option>Other</option>
+            </select>
+            <span class="error" id="requestError"></span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Speciality For Consultation <span>*</span></label>
+            <select id="speciality">
+              <option selected disabled>Select Speciality</option>
+              <option>Cardiology</option>
+              <option>Dermatology</option>
+              <option>Neurology</option>
+              <option>Orthopedics</option>
+              <option>Pediatrics</option>
+              <option>Psychiatry</option>
+              <option>General Medicine</option>
+              <option>Gynecology</option>
+              <option>Ophthalmology</option>
+              <option>ENT</option>
+              <option>Urology</option>
+              <option>Gastroenterology</option>
+              <option>ICU</option>
+            </select>
+            <span class="error" id="specialityError"></span>
+          </div>
+          <div class="form-group">
+            <label>Doctor <span>*</span></label>
+            <select id="doctor">
+              <option selected disabled>Select Doctor</option>
+              <option>Dr. Istaque Ahmed Milton</option>
+              <option>Prof. Mir Jamal Uddin</option>
+              <option>Dr. Md. Mahmudul Hasan</option>
+              <option>Dr. Md. Afzarul Rahman</option>
+              <option>Dr. Md. Kalam Hossion</option>
+              <option>Prof. Dr. Md. Khaled Hasan</option>
+            </select>
+            <span class="error" id="doctorError"></span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Appointment Date</label>
+            <input type="date" id="appointmentDate" placeholder="Select Appointment Date">
+            <span class="error" id="dateError"></span>
+          </div>
+          <div class="form-group">
+            <label>Appointment Time</label>
+            <input type="time" id="appointmentTime" placeholder="Select Time">
+            <span class="error" id="timeError"></span>
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Book Appointment Now</button>
+      </form>
+    </div>
+  </div>
+  <script src="Appointment.js"></script>
+
+</body>
+
+</html>
