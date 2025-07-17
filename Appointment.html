@@ -9,7 +9,7 @@
     <!-- Header Section -->
     <header id="header">
         <div class="logo">
-            <img src="/image/logo.png" alt="MedAID Logo" />
+            <img src="./image/logo.png" alt="MedAID Logo" />
         </div>
         <nav id="nav">
             <ul>
@@ -25,16 +25,16 @@
   <div class="page-wrapper">
     <div class="form-container">
       <h2>Book Appointment</h2>
-      <form id="appointmentForm">
+      <form id="appointmentForm" action="appointment.php" method="post">
         <div class="form-row">
           <div class="form-group">
             <label>Patient Name <span>*</span></label>
-            <input type="text" id= "patientName" placeholder="Enter Patient Name">
+            <input type="text" id= "patientName" name="patientName" placeholder="Enter Patient Name">
              <span class="error" id="nameError"></span>
           </div>
           <div class="form-group">
             <label>Date of Birth</label>
-            <input type="date" id="dob" placeholder="Select Date of Birth">
+            <input type="date" id="dob" name="dob" placeholder="Select Date of Birth">
             <span class="error" id="dobError"></span>
           </div>
         </div>
@@ -42,8 +42,8 @@
         <div class="form-row">
           <div class="form-group">
             <label>Gender <span>*</span></label>
-            <select id="gender">
-              <option >Select Gender</option>
+            <select id="gender" name="gender">
+              <option>Select Gender</option>
               <option>Male</option>
               <option>Female</option>
               <option>Other</option>
@@ -52,7 +52,7 @@
           </div>
           <div class="form-group">
             <label>Contact Number <span>*</span></label>
-            <input type="tel" id="contact" placeholder="Enter Contact Number">
+            <input type="tel" id="contact" name="contact" placeholder="Enter Contact Number">
             <span class="error" id="contactError"></span>
           </div>
         </div>
@@ -60,12 +60,12 @@
         <div class="form-row">
           <div class="form-group">
             <label>Email <span>*</span></label>
-            <input type="email" id="email" placeholder="Enter email address">
+            <input type="email" id="email" name="email" placeholder="Enter email address">
             <span class="error" id="emailError"></span>
           </div>
           <div class="form-group">
             <label>Request For <span>*</span></label>
-            <select id="requestFor">
+            <select id="requestFor" name="requestFor">
               <option selected disabled>Outpatient Consultation</option>
               <option>Investigation</option>
               <option>Health Check Package</option>
@@ -78,7 +78,7 @@
         <div class="form-row">
           <div class="form-group">
             <label>Speciality For Consultation <span>*</span></label>
-            <select id="speciality">
+            <select id="speciality" name="speciality">
               <option selected disabled>Select Speciality</option>
               <option>Cardiology</option>
               <option>Dermatology</option>
@@ -98,7 +98,7 @@
           </div>
           <div class="form-group">
             <label>Doctor <span>*</span></label>
-            <select id="doctor">
+            <select id="doctor" name="doctor">
               <option selected disabled>Select Doctor</option>
               <option>Dr. Istaque Ahmed Milton</option>
               <option>Prof. Mir Jamal Uddin</option>
@@ -114,12 +114,12 @@
         <div class="form-row">
           <div class="form-group">
             <label>Appointment Date</label>
-            <input type="date" id="appointmentDate" placeholder="Select Appointment Date">
+            <input type="date" id="appointmentDate" name="appointmentDate" placeholder="Select Appointment Date">
             <span class="error" id="dateError"></span>
           </div>
           <div class="form-group">
             <label>Appointment Time</label>
-            <input type="time" id="appointmentTime" placeholder="Select Time">
+            <input type="time" id="appointmentTime" name="appointmentTime" placeholder="Select Time">
             <span class="error" id="timeError"></span>
           </div>
         </div>
@@ -128,7 +128,7 @@
       </form>
     </div>
   </div>
-  <script src="Appointment.js"></script>
+  <!-- <script src="Appointment.js"></script> -->
 
 </body>
 
