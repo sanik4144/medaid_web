@@ -23,7 +23,7 @@
         echo "Submission Failed!!!";
     }
     else{
-        echo "Submission Successfull!!!";
+        echo "Submission Successfull!!!";<br><br>
         echo "Thank You, Mr. $name";
     }
 
