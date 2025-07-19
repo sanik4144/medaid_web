@@ -79,26 +79,23 @@ session_start();
 <?php
 if (isset($_SESSION['user_id'])) {
     // DB Connection
-    $conn = new mysqli("localhost", "root", "Arifen 5284@#", "user_system");
+    $conn = new mysqli("localhost", "root", "", "project");
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
 
     $user_id = $_SESSION['user_id'];
-    $sql = "SELECT name, email, phone FROM users WHERE id = ?";
+    $sql = "SELECT `Full Name`, `Email` FROM users WHERE id = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("i", $user_id);
     $stmt->execute();
-    $stmt->bind_result($name, $email, $phone);
+    $stmt->bind_result($name, $email);
     
     if ($stmt->fetch()) {
         echo "<div class='profile-box'>";
-        echo "<div class='profile-image'>👤</div>"; // You can replace this emoji with an actual image if needed
+        echo "<div class='profile-image'>👤</div>";
         echo "<h2>" . htmlspecialchars($name) . "</h2>";
-        echo "<p class='info-label'>Email</p>";
         echo "<p class='info-value'>" . htmlspecialchars($email) . "</p>";
-        echo "<p class='info-label'>Phone</p>";
-        echo "<p class='info-value'>" . htmlspecialchars($phone) . "</p>";
         echo "<a href='logout.php' class='button'>Logout</a>";
         echo "</div>";
     } else {
@@ -113,7 +110,7 @@ if (isset($_SESSION['user_id'])) {
     echo "<div class='profile-box'>";
     echo "<div class='profile-image'>👤</div>";
     echo "<h2>You are not logged in!</h2>";
-    echo "<a href='login.php' class='button'>Login</a> ";
+    echo "<a href='login.html' class='button'>Login</a> ";
     echo "<a href='signupform.html' class='button'>Sign Up</a>";
     echo "</div>";
 }
