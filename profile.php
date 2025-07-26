@@ -60,6 +60,7 @@ session_start();
 
         a.button {
             display: inline-block;
+            margin: 5px;
             margin-top: 20px;
             padding: 10px 20px;
             background-color: #3b82f6;
@@ -96,6 +97,7 @@ if (isset($_SESSION['user_id'])) {
         echo "<div class='profile-image'>👤</div>";
         echo "<h2>" . htmlspecialchars($name) . "</h2>";
         echo "<p class='info-value'>" . htmlspecialchars($email) . "</p>";
+        echo "<a href='index.html' class='button'>Home</a>";
         echo "<a href='logout.php' class='button'>Logout</a>";
         echo "</div>";
     } else {

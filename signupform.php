@@ -17,6 +17,6 @@
         echo "Submission Failed!!!";
     }
     else{
-        echo header("location: profile.php");
+        header("location: profile.php");
     }
 ?>
