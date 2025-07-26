@@ -45,11 +45,12 @@
           <div class="form-group">
             <label>Gender <span>*</span></label>
             <select id="gender" name="gender">
-              <option>Select Gender</option>
-              <option>Male</option>
-              <option>Female</option>
-              <option>Other</option>
+              <option value="" selected disabled>Select Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
             </select>
+
             <span class="error" id="genderError"></span>
           </div>
           <div class="form-group">
@@ -68,10 +69,11 @@
           <div class="form-group">
             <label>Request For <span>*</span></label>
             <select id="requestFor" name="requestFor">
-              <option selected disabled>Outpatient Consultation</option>
-              <option>Investigation</option>
-              <option>Health Check Package</option>
-              <option>Other</option>
+              <option value="" selected disabled>Select Request</option>
+              <option value="Outpatient Consultation">Outpatient Consultation</option>
+              <option value="Investigation">Investigation</option>
+              <option value="Health Check Package">Health Check Package</option>
+              <option value="Other">Other</option>
             </select>
             <span class="error" id="requestError"></span>
           </div>
@@ -80,35 +82,36 @@
         <div class="form-row">
           <div class="form-group">
             <label>Speciality For Consultation <span>*</span></label>
-            <select id="speciality" name="speciality">
-              <option selected disabled>Select Speciality</option>
-              <option>Cardiology</option>
-              <option>Dermatology</option>
-              <option>Neurology</option>
-              <option>Orthopedics</option>
-              <option>Pediatrics</option>
-              <option>Psychiatry</option>
-              <option>General Medicine</option>
-              <option>Gynecology</option>
-              <option>Ophthalmology</option>
-              <option>ENT</option>
-              <option>Urology</option>
-              <option>Gastroenterology</option>
-              <option>ICU</option>
-            </select>
+              <select id="speciality" name="speciality">
+                <option value="" selected disabled>Select Speciality</option>
+                <option value="Cardiology">Cardiology</option>
+                <option value="Dermatology">Dermatology</option>
+                <option value="Neurology">Neurology</option>
+                <option value="Orthopedics">Orthopedics</option>
+                <option value="Pediatrics">Pediatrics</option>
+                <option value="Psychiatry">Psychiatry</option>
+                <option value="General Medicine">General Medicine</option>
+                <option value="Gynecology">Gynecology</option>
+                <option value="Ophthalmology">Ophthalmology</option>
+                <option value="ENT">ENT</option>
+                <option value="Urology">Urology</option>
+                <option value="Gastroenterology">Gastroenterology</option>
+                <option value="ICU">ICU</option>
+              </select>
             <span class="error" id="specialityError"></span>
           </div>
           <div class="form-group">
             <label>Doctor <span>*</span></label>
             <select id="doctor" name="doctor">
-              <option selected disabled>Select Doctor</option>
-              <option>Dr. Istaque Ahmed Milton</option>
-              <option>Prof. Mir Jamal Uddin</option>
-              <option>Dr. Md. Mahmudul Hasan</option>
-              <option>Dr. Md. Afzarul Rahman</option>
-              <option>Dr. Md. Kalam Hossion</option>
-              <option>Prof. Dr. Md. Khaled Hasan</option>
+              <option value="" selected disabled>Select Doctor</option>
+              <option value="Dr. Istaque Ahmed Milton">Dr. Istaque Ahmed Milton</option>
+              <option value="Prof. Mir Jamal Uddin">Prof. Mir Jamal Uddin</option>
+              <option value="Dr. Md. Mahmudul Hasan">Dr. Md. Mahmudul Hasan</option>
+              <option value="Dr. Md. Afzarul Rahman">Dr. Md. Afzarul Rahman</option>
+              <option value="Dr. Md. Kalam Hossion">Dr. Md. Kalam Hossion</option>
+              <option value="Prof. Dr. Md. Khaled Hasan">Prof. Dr. Md. Khaled Hasan</option>
             </select>
+
             <span class="error" id="doctorError"></span>
           </div>
         </div>

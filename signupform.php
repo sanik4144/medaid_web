@@ -17,7 +17,6 @@
         echo "Submission Failed!!!";
     }
     else{
-        echo "Submission Successfull!!!";
-        echo "Welcome, Mr. $name";
+        echo header("location: profile.php");
     }
 ?>
