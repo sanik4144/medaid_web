@@ -4,6 +4,55 @@
   padding: 0;
 }
 
+
+/* Navigation Bar Styles */
+#header {
+  background: #4796DF;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+}
+
+.logo img {
+  height: 60px;
+  margin-left: 40px;
+  display: flex;
+  justify-content: left;
+}
+
+#nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+#nav ul li {
+  margin: 0 15px;
+}
+
+#nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+
+#nav ul li a:hover {
+  background: #fff;
+  color: #4796DF;
+  border-radius: 5px;
+}
+
+/* Navigation Bar end */
+
+
 /* Banner Section */
 .about_banner {
   background-image: url('./image/ab_banner.png');
