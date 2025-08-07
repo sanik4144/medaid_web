@@ -29,17 +29,24 @@ function validateForm() {
     let email = document.getElementById("email").value.trim();
     let password = document.getElementById("password").value.trim();
     let confirmPassword = document.getElementById("confirmPassword").value.trim();
+    let phone = document.getElementById("phone").value.trim();
 
     document.getElementById("nameError").innerText = "";
     document.getElementById("emailError").innerText = "";
     document.getElementById("passwordError").innerText = "";
     document.getElementById("confirmPasswordError").innerText = "";
+    document.getElementById("phoneError").innerText = "";
 
     let hasError = false;
 
     if (name.length < 6) {
         document.getElementById("nameError").innerText =
             "Name must be at least 6 characters.";
+        hasError = true;
+    }
+
+    if (phone === "") {
+        document.getElementById("phoneError").innerText = "Phone number is required.";
         hasError = true;
     }
 
@@ -60,6 +67,11 @@ function validateForm() {
     }
     if (!/[0-9]/.test(password)) {
         passwordErrors.push("At least one digit.");
+    }
+    
+    if(phone.length < 11) {
+        document.getElementById("phoneError").innerText = "Phone number must be between 11 digits.";
+        hasError = true;
     }
 
     if (passwordErrors.length > 0) {

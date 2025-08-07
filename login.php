@@ -18,7 +18,7 @@ if (isset($_POST['login'])) {
                 session_start();
                 $_SESSION['user_id'] = $row['id'];
                 $_SESSION['user_name'] = $row['name'];
-                header("Location: index.html");
+                header("location: profile.php");
                 exit();
             } else {
                 echo "Password is incorrect!";
