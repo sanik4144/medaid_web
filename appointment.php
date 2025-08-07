@@ -29,17 +29,6 @@ VALUES ('$name', '$dob', '$gender', '$contact', '$email', '$requestFor', '$speci
 
 $run = mysqli_query($con, $query);
 
-<<<<<<< HEAD
-    if(!$run){
-        echo "Submission Failed!!!";
-    }
-    else{
-        echo "Submission Successfull!!!"; <br><br>
-        echo "Thank You, Mr. $name";
-    }
-
-?>
-=======
 if (!$run) {
     echo "Submission Failed!";
 } else {
@@ -47,4 +36,3 @@ if (!$run) {
     exit();
 }
 ?>
->>>>>>> 20a5094fb3fcdeb04b16a7f3a6942aecebfae091
