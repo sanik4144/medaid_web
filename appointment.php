@@ -29,7 +29,6 @@ VALUES ('$name', '$dob', '$gender', '$contact', '$email', '$requestFor', '$speci
 
 $run = mysqli_query($con, $query);
 
-<<<<<<< HEAD
     if(!$run){
         echo "Submission Failed!!!";
     }
@@ -39,12 +38,3 @@ $run = mysqli_query($con, $query);
     }
 
 ?>
-=======
-if (!$run) {
-    echo "Submission Failed!";
-} else {
-    header("Location: profile.php");
-    exit();
-}
-?>
->>>>>>> 20a5094fb3fcdeb04b16a7f3a6942aecebfae091

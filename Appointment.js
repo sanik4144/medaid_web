@@ -28,14 +28,14 @@ document.addEventListener("DOMContentLoaded", function () {
     if (name === "") showError("nameError", "Please enter the patient name.");
     if (gender === "" || gender === "Select Gender") showError("genderError", "Please select gender.");
     if (contact === "") showError("contactError", "Please enter a contact number.");
-    if (email === "") showError("emailError", "Please enter an email.");
+    if (email === "") showError("emailError", "Please enter email.");
     if (requestFor === "") showError("requestError", "Please select a request type.");
     if (speciality === "") showError("specialityError", "Please select a speciality.");
     if (doctor === "") showError("doctorError", "Please select a doctor.");
 
     if (isValid) {
       // ✅ Submit the form to the PHP backend
-      form.submit();  // this sends the data to appointment.php
+      form.submit();
     }
   });
 });
