@@ -33,15 +33,8 @@ $run = mysqli_query($con, $query);
         echo "Submission Failed!!!";
     }
     else{
-        echo "Submission Successfull!!!"; <br><br>
-        echo "Thank You, Mr. $name";
+        header("Location: profile.php");
     }
 
 ?>
-if (!$run) {
-    echo "Submission Failed!";
-} else {
-    header("Location: profile.php");
-    exit();
-}
-?>
+
