@@ -38,3 +38,10 @@ $run = mysqli_query($con, $query);
     }
 
 ?>
+if (!$run) {
+    echo "Submission Failed!";
+} else {
+    header("Location: profile.php");
+    exit();
+}
+?>
