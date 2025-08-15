@@ -10,7 +10,7 @@ const medicines = [
     type: "Pain Reliever",
     description: "Used to treat fever and mild to moderate pain.",
     stock: 24,
-    image: "https://via.placeholder.com/300x180?text=Paracetamol",
+    image: "",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const medicines = [
     type: "Antibiotic",
     description: "Treats bacterial infections like pneumonia, bronchitis.",
     stock: 10,
-    image: "https://via.placeholder.com/300x180?text=Amoxicillin",
+    image: "",
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const medicines = [
     type: "Antihistamine",
     description: "Relieves allergy symptoms such as runny nose and sneezing.",
     stock: 36,
-    image: "https://via.placeholder.com/300x180?text=Loratadine",
+    image: "",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const medicines = [
     type: "Nonsteroidal Anti-inflammatory Drug (NSAID)",
     description: "Used to reduce fever, pain, and inflammation.",
     stock: 15,
-    image: "https://via.placeholder.com/300x180?text=Ibuprofen",
+    image: "",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const medicines = [
     type: "Antidiabetic",
     description: "Helps control blood sugar levels in type 2 diabetes.",
     stock: 20,
-    image: "https://via.placeholder.com/300x180?text=Metformin",
+    image: "",
   },
   {
     id: 6,
@@ -50,7 +50,7 @@ const medicines = [
     type: "Proton Pump Inhibitor",
     description: "Used to treat gastroesophageal reflux disease (GERD).",
     stock: 18,
-    image: "https://via.placeholder.com/300x180?text=Omeprazole",
+    image: "",
   },
   {
     id: 7,
@@ -58,7 +58,7 @@ const medicines = [
     type: "Cholesterol-lowering Medication",
     description: "Used to lower cholesterol and triglyceride levels.",
     stock: 12,
-    image: "https://via.placeholder.com/300x180?text=Simvastatin",
+    image: "",
   },
   {
     id: 8,
@@ -66,7 +66,7 @@ const medicines = [
     type: "Antiplatelet Agent",
     description: "Used to reduce pain, fever, or inflammation.",
     stock: 30,
-    image: "https://via.placeholder.com/300x180?text=Aspirin",
+    image: "",
   },
   {
     id: 9,
@@ -74,7 +74,7 @@ const medicines = [
     type: "Thyroid Hormone Replacement",
     description: "Used to treat hypothyroidism.",
     stock: 22,
-    image: "https://via.placeholder.com/300x180?text=Levothyroxine",
+    image: "",
   },
   {
     id: 10,
@@ -82,15 +82,7 @@ const medicines = [
     type: "Antibiotic",
     description: "Treats various bacterial infections.",
     stock: 14,
-    image: "https://via.placeholder.com/300x180?text=Ciprofloxacin",
-  },
-  {
-    id: 11,
-    name: "Amlodipine",
-    type: "Calcium Channel Blocker",
-    description: "Used to treat high blood pressure and angina.",
-    stock: 19,
-    image: "https://via.placeholder.com/300x180?text=Amlodipine",
+    image: "",
   },
 ];
 
@@ -115,7 +107,7 @@ medicines.forEach((medicine) => {
 /*calculator section scripts start */
 function calculateBMI() {
   const weight = parseFloat(document.getElementById("weight").value);
-  const height = parseFloat(document.getElementById("height").value); // Convert cm to m
+  const height = parseFloat(document.getElementById("height").value);
   const result = document.getElementById("result");
 
   if (isNaN(weight) || isNaN(height) || height <= 0) {

@@ -87,8 +87,8 @@ session_start();
 <?php
 if (isset($_SESSION['user_id'])) {
     $conn = new mysqli("localhost", "root", "", "project");
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
+    if (!$conn) {
+        die("Connection failed: ");
     }
 
     $user_id = $_SESSION['user_id'];
