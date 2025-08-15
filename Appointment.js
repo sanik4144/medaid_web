@@ -24,17 +24,26 @@ document.addEventListener("DOMContentLoaded", function () {
     const requestFor = document.getElementById("requestFor").value;
     const speciality = document.getElementById("speciality").value;
     const doctor = document.getElementById("doctor").value;
+    const appointmentDate = document.getElementById("appointmentDate").value;
+    const appointmentTime = document.getElementById("appointmentTime").value;
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (name === "") showError("nameError", "Please enter the patient name.");
     if (gender === "" || gender === "Select Gender") showError("genderError", "Please select gender.");
     if (contact === "") showError("contactError", "Please enter a contact number.");
-    if (email === "") showError("emailError", "Please enter email.");
+    if (email === "") {
+        showError("emailError", "Please enter an email.");
+    } else if (!emailPattern.test(email)) {
+        showError("emailError", "Please enter a valid email address.");
+    }
     if (requestFor === "") showError("requestError", "Please select a request type.");
     if (speciality === "") showError("specialityError", "Please select a speciality.");
     if (doctor === "") showError("doctorError", "Please select a doctor.");
+    if (appointmentDate === "") showError("dateError", "Please select an appointment date.");
+    if (appointmentTime === "") showError("timeError", "Please select an appointment time.");
 
     if (isValid) {
-      // ✅ Submit the form to the PHP backend
       form.submit();
     }
   });
